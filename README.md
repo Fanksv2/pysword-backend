@@ -1,1 +1,1 @@
-"# pysword-backend" 
+Backend service for pysword application
