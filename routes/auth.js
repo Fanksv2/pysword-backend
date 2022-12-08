@@ -17,7 +17,7 @@ function checkLoginInput(req, res, next) {
 }
 
 function checkToken(req, res, next) {
-    const { token } = req.body;
+    const token = req.get("token");
     if (!token) {
         return res.status(400).json("Token not provided");
     }
